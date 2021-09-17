@@ -7,10 +7,6 @@ value 3.14159 for π. Do these calculations in output statements.
 pi = 3.14159
 
 radius = float(input("Circle radius: "))
-diameter = radius * 2
-circumference = 2 * radius * pi
-area = pi * (radius ** 2)
-
-print("Circle diameter:", diameter)
-print("Circle circumference:", circumference)
-print("Circle area:", area)
+print("Circle diameter: {};\n"
+      "Circle circumference: {};\n"
+      "Circle Area: {};".format(radius * 2, 2 * radius * pi, pi * (radius ** 2)))
