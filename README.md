@@ -15,7 +15,7 @@
 5. [Задание №5](https://github.com/SniperFox213/university-labs/blob/master/practice_00/task5.py)
 6. [Задание №6](https://github.com/SniperFox213/university-labs/blob/master/practice_00/task6.py)
 
-### актическая №1
+### Практическая №1
 ⏰ Дата окончания: 4.10.2021  
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_01)  
 📜 Задания:  
