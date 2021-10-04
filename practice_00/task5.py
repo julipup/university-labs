@@ -10,3 +10,9 @@ radius = float(input("Circle radius: "))
 print("Circle diameter: {};\n"
       "Circle circumference: {};\n"
       "Circle Area: {};".format(radius * 2, 2 * radius * pi, pi * (radius ** 2)))
+
+def test():
+      print("TEST")
+
+
+test()

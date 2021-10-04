@@ -1,5 +1,5 @@
-"""
-Exercise 2. Rewrite the first script to display three any messages.
-"""
+# Task #2: Type Conversation
 
-print("Hello KROK University!")
+integer_01 = int("123")
+float_01 = float(integer_01)
+integer_02 = int(12.345)
