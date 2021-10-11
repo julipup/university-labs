@@ -20,8 +20,8 @@
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_01)  
 📜 Задания:  
 1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/practice_01/task1.py)
-2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_01/task1.py)
-3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/practice_01/task1.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_01/task2.py)
+3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/practice_01/task3.py)
 
 ### Лабораторная №3
 ⏰ Дата окончания: 11.10.2021  
