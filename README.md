@@ -28,3 +28,10 @@
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_03)  
 📜 Задания:  
 1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/lab_03/main.py)
+
+### Практическая №2
+⏰ Дата окончания: 25.10.2021  
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_02)  
+📜 Задания:  
+1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/practice_02/task1.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_02/task2.py)
