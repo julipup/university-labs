@@ -34,20 +34,31 @@ string = input('Write random string:')
 
 print('--------------------------')
 
+# C-like formatting,
+# '%d' % number
+# new python formatting
+# f'{number:5.2f}'
+# old python formatting
+# '{:10}.format(number)'
+
 #
 # Formatting integer numbers
-# - Using C-like formatting
 #
 print('Formatted integer numbers:')
 for number in integer:
-    print('Integer: ', '%5.0f' % number)
+    # New Python formatting
+    print(f'(New Python formatting) Integer: {number:5.0f}')
+
+    # Old Python formatting
+    print('(Old Python formatting) Integer: ', '{:5.0f}'.format(number))
+
+    # C-like Python formatting
+    print('(C-like Python formatting) Integer: ', '%5.0f' % number)
 
 print('--------------------------')
 
 #
 # Formatting real numbers
-# - Using old and new python
-#   syntax.
 # P.S. We'll use real_numbers array
 # twice - to format numbers as numbers
 # with floating point and to format
@@ -57,11 +68,25 @@ print('Formatted real numbers')
 
 print('- Real numbers as numbers with floating point')
 for number in real_numbers:
-    print('Floating point: ', '{:10}'.format(number))
+    # New Python formatting
+    print(f'(New Python formatting) Floating point: {number:10f}')
+
+    # Old Python formatting
+    print('(Old Python formatting) Floating point: ', '{0:10f}'.format(number))
+
+    # C-like Python formatting
+    print('(C-like Python formatting) Floating point: ', '%10f' % number)
 
 print('- Real numbers as numbers with fixed point')
 for number in real_numbers:
-    print('Fixed point: ', f'{number:5.2f}')
+    # New Python formatting
+    print(f'(New Python formatting) Fixed point: {number:5.2f}')
+
+    # Old Python formatting
+    print('(Old Python formatting) Fixed point: ', '{a:5.2}'.format(a=number))
+
+    # C-like Python formatting
+    print('(C-like Python formatting) Fixed point: ', '%5.2f' % number)
 
 print('--------------------------')
 
