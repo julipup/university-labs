@@ -44,6 +44,12 @@
 2. [Задание №5](https://github.com/SniperFox213/university-labs/blob/master/practice_03/task5.py)
 3. [Задание №6](https://github.com/SniperFox213/university-labs/blob/master/practice_03/task6.py)
 
+### Лабораторная №4
+⏰ Дата окончания: 15.10.2021
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_04)  
+📜 Задания:  
+1. [Задания №1-7](https://github.com/SniperFox213/university-labs/blob/master/lab_04/tasks1-7.py)
+
 ### Практическая №4
 ⏰ Дата окончания: 15.11.2021  
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_04)  
