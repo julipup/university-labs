@@ -73,3 +73,9 @@
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_07)  
 📜 Задания:  
 1. [Задания №1-8](https://github.com/SniperFox213/university-labs/blob/master/practice_07/tasks1-8.py)
+
+### Лабораторная №6
+⏰ Дата окончания: 03.10.2021  
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_06)  
+📜 Задания:  
+1. [Задания №1-2](https://github.com/SniperFox213/university-labs/blob/master/lab_06/tasks1-2.py)
