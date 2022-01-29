@@ -95,3 +95,12 @@
 3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/practice_08/task3.py)
 4. [Задание №4](https://github.com/SniperFox213/university-labs/blob/master/practice_08/task4.py)
 5. [Задание №5](https://github.com/SniperFox213/university-labs/blob/master/practice_08/task5.py)
+
+### Лабораторная №7
+⏰ Дата окончания: 29.01.2022  
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_07)  
+📜 Задания:  
+1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/lab_07/task1.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/lab_07/task2.py)
+3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/lab_07/task3.py)
+4. [Задание №4](https://github.com/SniperFox213/university-labs/blob/master/lab_07/task4.py)
