@@ -116,12 +116,22 @@
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_08)  
 📜 Задания:  
 1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/lab_08/task1.py)
-1. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/lab_08/task2.py)
-1. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/lab_08/task3.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/lab_08/task2.py)
+3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/lab_08/task3.py)
 
 ### Практическая №10
 ⏰ Дата окончания: 21.02.2022  
 🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_10)  
 📜 Задания:  
 1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/practice_10/task1.py)
-1. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_10/task2.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_10/task2.py)
+
+### Лабораторная №9
+⏰ Дата окончания: 21.02.2022  
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/lab_09)  
+📜 Задания:  
+1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task1.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task2.py)
+3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task3.py)
+4. [Задание №4](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task4.py)
+5. [Задание №5](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task5.py)
