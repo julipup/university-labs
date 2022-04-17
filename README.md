@@ -135,3 +135,11 @@
 3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task3.py)
 4. [Задание №4](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task4.py)
 5. [Задание №5](https://github.com/SniperFox213/university-labs/blob/master/lab_09/task5.py)
+
+### Практическая №11
+⏰ Дата окончания: 17.04.2022  
+🔗 Код: [ссылка](https://github.com/SniperFox213/university-labs/tree/master/practice_11)  
+📜 Задания:  
+1. [Задание №1](https://github.com/SniperFox213/university-labs/blob/master/practice_11/task1.py)
+2. [Задание №2](https://github.com/SniperFox213/university-labs/blob/master/practice_11/task2.py)
+3. [Задание №3](https://github.com/SniperFox213/university-labs/blob/master/practice_11/task3.py)
