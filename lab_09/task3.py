@@ -1,31 +1,50 @@
-# 3. Реалізуйте функцію, що виводить на екран прямокутник з зірочок «*». 
-# Її параметрами будуть цілі числа, які описують довжину і ширину такого прямокутника.
+# Insertion sort
+import unittest
+from testData import random_array
+from testData import DefaultTestCase
 
-def draw_rectangle(height = 4, width = 4):
-  for row in range(0, height):
-    line = ""
+def insertion_sort(original_array: list, test_case = None):
+  """
+    Simple insertion sort algorithm.
+    Returns sorted array
+  """
+  
+  array = original_array.copy()
+  
+  for i in range(1, len(original_array)):
+    key = array[i]
 
-    for column in range(0, width):
-      if row == 0 or row == height - 1:
-        line += "*"
-      else:
-        if column == 0 or column == width - 1:
-          line += "*"
-        else:
-          line += " "
+    j = i - 1
+    
+    while j >= 0 and key < array[j] :
+      array[j + 1] = array[j]
+      j -= 1
+      
+      # Debug information
+      if test_case is not None:
+        test_case._swaps_made += 1
+    
+    array[j + 1] = key
+    
+    # Debug information
+    if test_case is not None:
+      test_case._swaps_made += 1
+  
+  return array
 
-    print(line)
+# Testings
+class TestCase(DefaultTestCase):
+  # test1: Big Array
+  def test1(self):
+    self.assertEqual(insertion_sort(self._original_array, self), self._ascending_sorted_array)
 
-
-# "Tests"
-print("Height: 4, width: 4")
-draw_rectangle()
-
-print("Height 2, width: 2")
-draw_rectangle(2, 2)
-
-print("Height 2, width: 4")
-draw_rectangle(2, 4)
-
-print("Height 6, width: 12")
-draw_rectangle(6, 12)
+  # test2: Big ascending sorted array
+  def test2(self):
+    self.assertEqual(insertion_sort(self._descending_sorted_array, self), self._ascending_sorted_array)
+    
+  # test3: Big descending sorted array
+  def test3(self):
+    self.assertEqual(insertion_sort(self._ascending_sorted_array, self), self._ascending_sorted_array)
+    
+if __name__ == "__main__":
+  unittest.main()

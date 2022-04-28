@@ -1,57 +1,40 @@
-# 1. Напишіть функцію, яка поверне максимальне значення зі списку чисел.
-
+# Bubble sort
 import unittest
+from testData import random_array, DefaultTestCase
 
-def biggest_number(array: list or tuple) -> int:
-  # Typechecking
-  if not isinstance(array, (list, tuple)):
-    raise Exception('Array must be of list or tuple type')
+def bubble_sort(original_array: list, test_case = None):
+  """
+    Simple bubble sort algorithm.
+    Returns sorted algorithm.
+  """
+  
+  array = original_array.copy()
+  
+  for i in range(len(original_array) - 1):
+    for j in range(0, len(original_array) - i - 1):
+      if array[j] > array[j + 1]:
+        array[j], array[j + 1] = array[j + 1], array[j]
 
-  # Deep typechecking
-  # https://stackoverflow.com/a/13252348
-  if not all(isinstance(x, (int, float, complex)) for x in array):
-    raise Exception('All values in array must be of int, float or complex')
+      # Debug information
+      if test_case is not None:
+        test_case._swaps_made += 2
+        test_case._checks_made += 1
+        
+  return array
 
-  # Finding biggest number using
-  # linear algorithm
-  biggest = float('-inf')
+# Testings
+class TestCase(DefaultTestCase):
+  # test1: Big Array
+  def test1(self):
+    self.assertEqual(bubble_sort(self._original_array, self), self._ascending_sorted_array)
 
-  for number in array:
-    if number > biggest:
-      biggest = number
-
-  return biggest
-
-# Tests
-class TestCase(unittest.TestCase):
-  def test_1(self):
-    return self.assertEqual(biggest_number([0, 1, 2, 3, 4]), 4)
-
-  def test_2(self):
-    return self.assertEqual(biggest_number([-1, -2, -3, -4]), -1)
-
-  # Allowed types: lists or int tuples
-  def test_3(self):
-    return self.assertEqual(biggest_number([0, 1]), 1)
-
-  def test_4(self):
-      return self.assertEqual(biggest_number((0, 1)), 1)
-
-  # Error checking
-  def test_5(self):
-    with self.assertRaises(Exception):
-      biggest_number({ 1: 2, 3: 4 })
-
-  def test_6(self):
-    with self.assertRaises(Exception):
-      biggest_number("string")
-
-  def test_7(self):
-    with self.assertRaises(Exception):
-      biggest_number((1, "tuple"))
-
-  def test_8(self):
-    with self.assertRaises(Exception):
-      biggest_number([0, 1, "list"])
-
-unittest.main()
+  # test2: Big ascending sorted array
+  def test2(self):
+    self.assertEqual(bubble_sort(self._descending_sorted_array, self), self._ascending_sorted_array)
+    
+  # test3: Big descending sorted array
+  def test3(self):
+    self.assertEqual(bubble_sort(self._ascending_sorted_array, self), self._ascending_sorted_array)
+    
+if __name__ == "__main__":
+  unittest.main()
