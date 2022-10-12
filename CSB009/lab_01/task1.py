@@ -13,7 +13,7 @@
 
 
 class Rational:
-    def __init__(self, a, b):
+    def __init__(self, a: float, b: float):
         # Saving numbers
         self.a = a
         self.b = b
@@ -57,11 +57,11 @@ class Rational:
 
 if __name__ == "__main__":
     # Console application
-    print("Rational Number Tester\n\n")
+    print("Rational Number Tester\n")
 
     while True:
-        a = int(input("| a = "))
-        b = int(input("| b = "))
+        a = float(input("| a = "))
+        b = float(input("| b = "))
 
         # Building this number
         rational = Rational(a, b)
