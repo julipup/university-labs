@@ -1,5 +1,6 @@
 import types
-from typing import Tuple, Callable
+from typing import Tuple, Callable, Optional
+
 
 class Date:
     # Class variables
@@ -21,6 +22,18 @@ class Date:
         ("December", 31)
     ]
 
+    # Placeholders, used in to_str method
+    # format: Tuple[text placeholder, number of numbers in this number*, function to call (with self as argument)]
+    # *idk how to explain this
+    placeholders: list[Tuple[str, Optional[int], Callable]] = [
+        ("day", 2, lambda self: self.__day),
+        ("month", 2, lambda self: self.__month),
+        ("year", None, lambda self: self.__year),
+
+        # Special placeholders
+        ("named month", 2, lambda self: self.__get_month_info(self.__month)[0].lower()),
+    ]
+
     # Instance-specific variables/methods
     def __init__(self, day: int, month: int, year: int):
         self.__day = day
@@ -29,6 +42,21 @@ class Date:
 
         # Running checks
         self.__check_date()
+
+    def to_str(self, date_format: str = "[day].[month].[year]") -> str:
+        for placeholder in Date.placeholders:
+            number_size = placeholder[1]
+            value = str(placeholder[2](self))
+
+            if number_size and len(value) < number_size:
+                number_size -= len(value)
+                while number_size > 0:
+                    value = f'0{ value }'
+                    number_size -= 1
+
+            date_format = date_format.replace(f'[{placeholder[0]}]', value)
+
+        return date_format
 
     @property
     def day(self):
@@ -115,3 +143,8 @@ class Date:
 
     def __str__(self):
         return f'Date <day: { self.__day }, month: { self.__month }, year: { self.__year }>'
+
+
+date = Date(10, 2, 2024)
+print(date.to_str())
+print(date.to_str("[day] [named month] [year]"))
